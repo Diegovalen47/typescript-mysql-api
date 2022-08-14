@@ -1,0 +1,30 @@
+@api = http://localhost:3000/posts
+
+### getting all posts
+GET {{api}}
+
+### Create new post
+POST {{api}}
+Content-Type: application/json
+
+{
+  "title": "My Second Post",
+  "description": "Lorem ipsum",
+  "image_url": "https://thumbs.dreamstime.com/z/post-amarillo-129547759.jpg"
+}
+
+### get post by id
+GET {{api}}/2
+
+### delete post by id
+DELETE {{api}}/2
+
+### Update post
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+  "title": "El primer post chingon",
+  "description": "Care nalga",
+  "image_url": "https://thumbs.dreamstime.com/z/post-amarillo-129547759.jpg"
+}
