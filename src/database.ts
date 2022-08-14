@@ -5,7 +5,7 @@ export async function connect () {
   const connection = await createPool({
     host: 'localhost',
     user: 'root',
-    password: 'Valen76027',
+    password: '',
     database: 'node_mysql_ts',
     connectionLimit: 10
   });
